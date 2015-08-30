@@ -1,0 +1,23 @@
+{
+    "blogApp": {
+        "entry": {
+            "home": {
+                "title": "Entrys",
+                "createLabel": "Créer un nouveau Entry",
+                "createOrEditLabel": "Créer ou éditer un Entry"
+            },
+            "delete": {
+                "question": "Etes-vous certain de vouloir supprimer le Entry {{ id }} ?"
+            },
+            "detail": {
+                "title": "Entry"
+            },
+            "name": "Name",
+            "content": "Content",
+            "date": "Date",
+            "blog": "Blog",
+            "tag": "Tag"
+        }
+    }
+}
+
