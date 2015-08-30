@@ -1,15 +1,14 @@
 package com.mycompany.blog.config;
 
-import org.joda.time.DateTime;
-import org.joda.time.LocalDate;
-import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration;
-
+import com.fasterxml.jackson.datatype.joda.JodaModule;
 import com.mycompany.blog.domain.util.CustomDateTimeDeserializer;
 import com.mycompany.blog.domain.util.CustomDateTimeSerializer;
 import com.mycompany.blog.domain.util.CustomLocalDateSerializer;
 import com.mycompany.blog.domain.util.ISO8601LocalDateDeserializer;
-import com.fasterxml.jackson.datatype.joda.JodaModule;
+import org.joda.time.DateTime;
+import org.joda.time.LocalDate;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
 
 @Configuration
 public class JacksonConfiguration {

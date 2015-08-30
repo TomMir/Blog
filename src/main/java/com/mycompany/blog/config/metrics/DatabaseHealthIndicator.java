@@ -14,10 +14,9 @@ import java.util.Map;
  * SpringBoot Actuator HealthIndicator check for the Database.
  */
 public class DatabaseHealthIndicator extends AbstractHealthIndicator {
-    
-    private JdbcTemplate jdbcTemplate;
 
     private static Map<String, String> queries = new HashMap<>();
+    private static String DEFAULT_QUERY = "SELECT 1";
 
     static {
         queries.put("HSQL Database Engine",
@@ -29,8 +28,7 @@ public class DatabaseHealthIndicator extends AbstractHealthIndicator {
         queries.put("Microsoft SQL Server", "SELECT 1");
     }
 
-    private static String DEFAULT_QUERY = "SELECT 1";
-
+    private JdbcTemplate jdbcTemplate;
     private String query = null;
 
     public DatabaseHealthIndicator(DataSource dataSource) {

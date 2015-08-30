@@ -1,5 +1,6 @@
 package com.mycompany.blog.config;
 
+import com.mycompany.blog.async.ExceptionHandlingAsyncTaskExecutor;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.aop.interceptor.AsyncUncaughtExceptionHandler;
@@ -16,8 +17,6 @@ import org.springframework.scheduling.annotation.EnableScheduling;
 import org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor;
 
 import java.util.concurrent.Executor;
-
-import com.mycompany.blog.async.ExceptionHandlingAsyncTaskExecutor;
 
 @Configuration
 @EnableAsync

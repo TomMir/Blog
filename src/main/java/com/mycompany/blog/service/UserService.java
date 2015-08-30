@@ -1,7 +1,6 @@
 package com.mycompany.blog.service;
 
 import com.mycompany.blog.domain.Authority;
-import com.mycompany.blog.domain.PersistentToken;
 import com.mycompany.blog.domain.User;
 import com.mycompany.blog.repository.AuthorityRepository;
 import com.mycompany.blog.repository.PersistentTokenRepository;

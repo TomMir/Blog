@@ -1,6 +1,5 @@
 package com.mycompany.blog.web.rest;
 
-import com.mycompany.blog.security.AuthoritiesConstants;
 import com.mycompany.blog.service.AuditEventService;
 import com.mycompany.blog.web.propertyeditors.LocaleDateTimeEditor;
 import org.joda.time.LocalDateTime;

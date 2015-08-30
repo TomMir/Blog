@@ -1,6 +1,5 @@
 package com.mycompany.blog.security;
 
-import com.mycompany.blog.domain.Authority;
 import com.mycompany.blog.domain.User;
 import com.mycompany.blog.repository.UserRepository;
 import org.slf4j.Logger;
@@ -13,12 +12,9 @@ import org.springframework.stereotype.Component;
 import org.springframework.transaction.annotation.Transactional;
 
 import javax.inject.Inject;
-import java.util.ArrayList;
-import java.util.Collection;
+import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
-import java.util.Collections;
-import java.util.List;
 
 /**
  * Authenticate a user from the database.

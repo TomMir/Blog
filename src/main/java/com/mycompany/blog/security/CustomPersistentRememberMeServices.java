@@ -1,7 +1,6 @@
 package com.mycompany.blog.security;
 
 import com.mycompany.blog.domain.PersistentToken;
-import com.mycompany.blog.domain.User;
 import com.mycompany.blog.repository.PersistentTokenRepository;
 import com.mycompany.blog.repository.UserRepository;
 import org.joda.time.LocalDate;
@@ -54,17 +53,12 @@ import java.util.Arrays;
 public class CustomPersistentRememberMeServices extends
         AbstractRememberMeServices {
 
-    private final Logger log = LoggerFactory.getLogger(CustomPersistentRememberMeServices.class);
-
     // Token is valid for one month
     private static final int TOKEN_VALIDITY_DAYS = 31;
-
     private static final int TOKEN_VALIDITY_SECONDS = 60 * 60 * 24 * TOKEN_VALIDITY_DAYS;
-
     private static final int DEFAULT_SERIES_LENGTH = 16;
-
     private static final int DEFAULT_TOKEN_LENGTH = 16;
-
+    private final Logger log = LoggerFactory.getLogger(CustomPersistentRememberMeServices.class);
     private SecureRandom random;
 
     @Inject
